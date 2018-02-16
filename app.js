@@ -12,10 +12,13 @@ const expressValidator = require('express-validator');
 
 // [jwc] https://stackoverflow.com/questions/20832126/missingschemaerror-schema-hasnt-been-registered-for-model-user: Ahei Cheng: Fix 2 of 2: Good
 const Store = require('./models/Store.js');
+const User = require('./models/User.js');
 
 const routes = require('./routes/index');
 const helpers = require('./helpers');
 const errorHandlers = require('./handlers/errorHandlers');
+// [jwc]+1 stub out since causes: [Error: Cannot find module './handlers/passport'] require('./handlers/passport');
+// Actual file actually on Lec45 later, so copy in since seems needed for login operation
 require('./handlers/passport');
 
 // create our Express app
