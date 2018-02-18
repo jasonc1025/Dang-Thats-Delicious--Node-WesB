@@ -10,10 +10,11 @@ const promisify = require('es6-promisify');
 const flash = require('connect-flash');
 const expressValidator = require('express-validator');
 
-// [jwc]+3 https://stackoverflow.com/questions/20832126/missingschemaerror-schema-hasnt-been-registered-for-model-user: Ahei Cheng: Fix 2 of 2: Good
-const Store = require('./models/Store.js');
-const User = require('./models/User.js');
-const Review = require('./models/Review.js');
+// [jwc]+4 https://stackoverflow.com/questions/20832126/missingschemaerror-schema-hasnt-been-registered-for-model-user: Ahei Cheng: Fix 2 of 2: Good
+// Still need these bug fixes though
+// const Store = require('./models/Store.js');
+// const User = require('./models/User.js');
+// const Review = require('./models/Review.js');
 
 const routes = require('./routes/index');
 const helpers = require('./helpers');
